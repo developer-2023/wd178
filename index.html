@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            function - return of object - exercise
+        */
+
+        function createTv(brand, screenSize, color) {
+            if (color != "white" &&
+                color != "black" &&
+                color != "silver")
+                return null;
+
+            return {
+                brand: brand,
+                screenSize: screenSize,
+                color: color
+            }
+        }
+
+        let product1 = createTv("Sony", 42, "black");
+        console.log(product1);
+        let product2 = createTv("Sharp", 32, "white");
+        console.log(product2);
+        let product3 = createTv("Lenovo", 50, "silver");
+        console.log(product3);
+        let product4 = createTv("Lenovo", 42, "green");
+        console.log(product4);
+
+    </script>
+</body>
+</html>
